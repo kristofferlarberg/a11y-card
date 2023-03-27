@@ -51,16 +51,18 @@ export default function Home() {
       </Head>
       <section>
         <h1>Accessible card</h1>
-        {data.map((item) => (
-          <Card
-            key={item.id}
-            caption={item.caption}
-            img={item.img}
-            link={item.link}
-            preTitle={item.preTitle}
-            title={item.title}
-          />
-        ))}
+        <ul className="flex flex-col gap-8 md:grid-cols-2 lg:grid-cols-3 [@supports(display:grid)]:grid">
+          {data.map((item) => (
+            <Card
+              key={item.id}
+              caption={item.caption}
+              img={item.img}
+              link={item.link}
+              preTitle={item.preTitle}
+              title={item.title}
+            />
+          ))}
+        </ul>
       </section>
     </>
   );
