@@ -50,7 +50,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section>
-        <h1>Accessible card</h1>
+        <h1 className="mb-8 text-2xl font-bold">Accessible card</h1>
         <ul className="flex flex-col gap-8 md:grid-cols-2 lg:grid-cols-3 [@supports(display:grid)]:grid">
           {data.map((item) => (
             <Card

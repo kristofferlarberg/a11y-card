@@ -13,7 +13,7 @@ export const Card = ({ link, title, caption, preTitle, img }) => {
     >
       <div className="flex grow flex-col">
         {title && (
-          <h3 className="peer order-3 py-2 px-6">
+          <h3 className="peer order-3 py-2 px-6 text-lg">
             <Link
               aria-label={`${title}, Läs mer…`}
               href={link}
@@ -37,12 +37,12 @@ export const Card = ({ link, title, caption, preTitle, img }) => {
             }}
           />
         </div>
-        {preTitle && <p className="order-2 px-6 pt-6">{preTitle}</p>}
+        {preTitle && <p className="order-2 px-6 pt-5 text-sm">{preTitle}</p>}
         {caption && <p className="order-4 px-6">{caption}</p>}
         <p
           aria-hidden="true"
           className={clsx(
-            "relative order-5 mb-0 mt-auto px-6 pb-6 pt-3 text-right leading-none transition-opacity",
+            "relative order-5 mb-0 mt-auto px-6 pb-6 pt-3 text-right text-sm leading-none transition-opacity",
             "group-hover:underline peer-focus-within:underline motion-reduce:transition-none lg:underline lg:opacity-0 lg:group-hover:opacity-100 lg:peer-focus-within:opacity-100"
           )}
         >
